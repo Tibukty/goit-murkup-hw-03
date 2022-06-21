@@ -199,6 +199,8 @@ p {
 
 
 
+
+
 /* main */
 
 
@@ -209,7 +211,10 @@ p {
 .hero-background {
 
     background-color: var(--heder-footer);
-    
+    margin-top: 15px;
+    padding-top: 200px;
+    padding-bottom: 280px;
+    text-align: center;
  }
  
 .section-one-h1 { 
@@ -217,16 +222,12 @@ p {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    text-align: center;
+    width: 695px;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--txt-white);
-    margin-top: 200px;
-    margin-right: 450px;
-    margin-bottom: 280px;
-    margin-left: 450px;
-    
-
+    margin-right: auto;
+    margin-left: auto;
     
 }
 
@@ -237,14 +238,14 @@ p {
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
-    display: flex;
-    align-items: center;
-    text-align: center;
     letter-spacing: 0.06em;
     color: var(--txt-deep-grey);
     background-color: var(--txt-light-gray);
     cursor: pointer;
     padding: 10px 30px ;
+    margin-top: 30px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .section-one-h2 {
@@ -252,21 +253,41 @@ p {
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
-    color: var(--txt-deep-grey);}
+    color: var(--txt-deep-grey);
+    margin-bottom: 50px;
+}
+
+
 
 .section-one-h3-best {
     
     font-size: 14px;
     line-height: 1.14;
+    
     text-transform: uppercase;
-    color: var(--txt-deep-grey);}
-
+    color: var(--txt-deep-grey);
+    margin-bottom: 7px;}
+    
 .section-one-p-best {
     font-size: 14px;
     line-height: 1.71;
-    }
+    
+}
+.best-list {
+    --items: 4;
+}
 
+.banda-background {
+    background-color: #F5F4FA;;
+}
+.banda-border {
+    padding: 0px 0px;
+    border: 1px solid #EEEEEE;
+    background-color: #FFFFFF;;
+    border-top: none;
+    border-radius: 0px 0px 4px 4px;
 
+}
 
 .section-one-h3-banda {
     
@@ -275,6 +296,8 @@ p {
     /* identical to box height */
     text-align: center;
     color: var(--txt-deep-grey);
+    margin-top: 30px;
+    margin-bottom: 10px;
     }
 
 .section-one-p-banda {
@@ -282,8 +305,12 @@ p {
     line-height: 1.19;
     /* identical to box height */
     text-align: center;
+    margin-bottom: 30px;
     } 
 
+.banda-list {
+    --items: 4;
+}
 
 
 
@@ -349,6 +376,7 @@ p {
 
 .footer {
 background-color: var(--heder-footer);
+
 }
 
 .footer-container {
