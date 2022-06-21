@@ -31,12 +31,12 @@
     <!-- heder -->
 
     <header class="heder">
-      <div class="container heder-container">
-        <nav class="heder-nav">
-          <a class="logo-web-studio link" href="./index.html"
+      <div class="container section-flex heder-container">
+        <nav class="heder-nav section-flex">
+          <a class="logo-web logo-heder link" href="./index.html"
             >Web<span class="logo-studio">Studio</span></a
           >
-          <ul class="heder-list list">
+          <ul class="list section-flex">
             <li class="heder-list-item">
               <a class="heder-link link current" href="./index.html">Студия</a>
             </li>
@@ -48,8 +48,8 @@
             </li>
           </ul>
         </nav>
-        <div class="heder-group">
-          <ul class="heder-group list">
+        <div class="heder-group section-flex">
+          <ul class="section-flex list">
             <li class="heder-group-item">
               <a class="heder-contact link" href="mailito:info@devstudio.com">info@devstudio.com</a>
             </li>
@@ -68,8 +68,10 @@
         <!-- section hero -->
 
         <section class="hero-background">
-          <h1 class="section-one-h1">Эффективные решения для вашего бизнеса</h1>
-          <button class="btn-one btn" type="button">Заказать услугу</button>
+          <div class="section-flex">
+            <h1 class="section-one-h1">Эффективные решения для вашего бизнеса</h1>
+            <button class="btn-one btn" type="button">Заказать услугу</button>
+          </div>
         </section>
 
         <!-- section best  -->
@@ -163,25 +165,32 @@
 
     <footer class="footer">
       <div class="container">
-        <a class="logo-web link" href="./index.html"
-          >Web<span class="footer-logo-studio">Studio</span></a
-        >
+        <div class="section-flex footer-container">
+          <a class="logo-web logo-footer section-flex link" href="./index.html"
+            >Web<span class="footer-logo-studio">Studio</span></a
+          >
+        </div>
+
         <address class="footer-address-it">
-          <ul class="list">
-            <li>
-              <a
-                class="footer-address link"
-                href="https://goo.gl/maps/yNYyYPv2zE2rzLxP9"
-                target="_blank"
-                rel="noopener noreferrer"
-                >г. Киев, пр-т Леси Украинки, 26</a
-              >
-            </li>
-            <li>
-              <a class="footer-contact link" href="mailito:info@example.com">info@example.com</a>
-            </li>
-            <li><a class="footer-contact link" href="tel:+380991111111">+38 099 111 11 11</a></li>
-          </ul>
+          <div class="section-flex footer-container">
+            <ul class="list section-flex footer-container">
+              <li class="section-flex">
+                <a
+                  class="footer-address link"
+                  href="https://goo.gl/maps/yNYyYPv2zE2rzLxP9"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >г. Киев, пр-т Леси Украинки, 26</a
+                >
+              </li>
+              <li class="section-flex">
+                <a class="footer-contact link" href="mailito:info@example.com">info@example.com</a>
+              </li>
+              <li class="section-flex footer-end">
+                <a class="footer-contact link" href="tel:+380991111111">+38 099 111 11 11</a>
+              </li>
+            </ul>
+          </div>
         </address>
       </div>
     </footer>

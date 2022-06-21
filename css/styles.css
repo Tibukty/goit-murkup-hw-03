@@ -48,7 +48,7 @@ h4,
 p {
     margin: 0;
 }
-
+ 
 /* сетка flex */
 
 .card-set {
@@ -86,6 +86,10 @@ p {
     outline: 1px solid red;
 }
 
+.section-flex {
+    display: flex;
+}
+
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -110,6 +114,13 @@ p {
     padding: 0;
 }
 
+.logo-web {
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--accent-txt-color)}
 
 .btn {
 
@@ -132,23 +143,17 @@ p {
 /* heder */
 
 .heder-container {
-    display: flex;
+    
     align-items: center;
+    padding-bottom: 1px;
     border-bottom: 1px solid #ECECEC;
     }
 
 .heder-nav {
-    display: flex;
     align-items: center;
 }
 
-.logo-web-studio {
-    font-family: var(--secondary-font);
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
-    color: var(--accent-txt-color);
+.logo-heder {
     margin-right: 90px;
 
 }
@@ -156,10 +161,7 @@ p {
 .logo-studio {
     color: var(--txt-black);}
 
-.heder-list {
-    display: flex; 
-    align-items: center;
-}
+
 
 .heder-list-item:not(:last-child) {
     margin-right: 50px;}
@@ -174,7 +176,7 @@ p {
 
 .heder-group  { 
     margin-left: auto;
-    display: flex;}
+    }
 .heder-group-item:not(:last-child) {
     margin-right:  50px;
 }
@@ -207,6 +209,7 @@ p {
 .hero-background {
 
     background-color: var(--heder-footer);
+    
  }
  
 .section-one-h1 { 
@@ -218,7 +221,12 @@ p {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--txt-white);
+    margin-top: 200px;
+    margin-right: 450px;
+    margin-bottom: 280px;
+    margin-left: 450px;
     
+
     
 }
 
@@ -236,6 +244,7 @@ p {
     color: var(--txt-deep-grey);
     background-color: var(--txt-light-gray);
     cursor: pointer;
+    padding: 10px 30px ;
 }
 
 .section-one-h2 {
@@ -256,6 +265,8 @@ p {
     font-size: 14px;
     line-height: 1.71;
     }
+
+
 
 .section-one-h3-banda {
     
@@ -282,13 +293,10 @@ p {
 
 
 .list-portfolio-container {
-        display:flex;
         align-items: center;
         justify-content: center;
         
-      
-        
-}
+      }
 
 .btn-portfolio {
         padding: 6px 22px;
@@ -308,14 +316,14 @@ p {
 
 
 .portfolio-container { 
-    display: flex;
+
     margin-top: 35px;} 
  
-
-
-.portfolio-bord {
-    border-bottom: 1px solid #EEEEEE;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+.portfolio-border {
+    padding: 20px 25px;
+    border: 1px solid #EEEEEE;
+    border-top: none;
+       
     }
 
 
@@ -325,16 +333,13 @@ p {
     line-height: 2;
     letter-spacing: 0.06em;
     color: var(--txt-deep-grey);
-    margin-top: 20px;
-    margin-left: 25px;
+    
 } 
 
 .pottfolio-p-style {
     line-height: 1.88;
     color: var(--txt-gray);
-    margin-top: 5px;
-    margin-left: 25px;
-    }
+}
 
 
 
@@ -347,22 +352,29 @@ background-color: var(--heder-footer);
 }
 
 .footer-container {
-    display: flex;
-    flex-direction: column
+    flex-direction: column;
+    
 }
+
+.logo-footer {
+    margin-top: 60px;
+    }
+
 .footer-logo-studio {
 color: var(--txt-white);
-
-
-
 }
-.footer-address-it {font-style: normal;} 
+
+.footer-address-it {
+    font-style: normal;
+    } 
 
 .footer-address {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--txt-white);
+    margin-top: 20px;
+    
 }
 
 
@@ -371,6 +383,14 @@ color: var(--txt-white);
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--txt-gray-glass);
+    margin-top: 10px;
+    not(last-child): 10px;
+    
+}
+
+.footer-end { 
+    margin-bottom: 60px;
+
 }
 
 .footer-contact:hover,
