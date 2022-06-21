@@ -154,7 +154,7 @@ p {
 }
 
 .logo-heder {
-    margin-right: 90px;
+    margin-right: 99px;
 
 }
 
@@ -280,6 +280,10 @@ p {
 .banda-background {
     background-color: #F5F4FA;;
 }
+
+.section-top {
+    padding-top: 0;}
+
 .banda-border {
     padding: 0px 0px;
     border: 1px solid #EEEEEE;
