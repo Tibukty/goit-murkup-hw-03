@@ -147,9 +147,8 @@ img {
     }
     
 .heder-portfolio-border {
-    
     border-bottom: 1px solid #ECECEC;
-    padding-bottom: 1px;}
+    }
         
    
 
@@ -180,10 +179,14 @@ img {
     padding-top: 32px;
     padding-bottom: 32px;}
 
-.heder-padding {
+.heder-padding-one {
     padding-top: 32px;
     padding-bottom: 32px;
 }
+
+.heder-padding-portfolio {
+    padding-top: 32px;
+    padding-bottom: 31px;}
 
 .heder-group  { 
     margin-left: auto;
