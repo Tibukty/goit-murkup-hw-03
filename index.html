@@ -30,32 +30,34 @@
   <body>
     <!-- heder -->
 
-    <header class="heder container section-flex heder-container">
-      <nav class="heder-nav section-flex">
-        <a class="logo-web logo-heder link" href="./index.html"
-          >Web<span class="logo-studio">Studio</span></a
-        >
-        <ul class="list section-flex heder-padding-one">
-          <li class="heder-list-item">
-            <a class="heder-link link current" href="./index.html">Студия</a>
+    <header class="heder heder-container">
+      <div class="container section-flex">
+        <nav class="heder-nav section-flex">
+          <a class="logo-web logo-heder link" href="./index.html"
+            >Web<span class="logo-studio">Studio</span></a
+          >
+          <ul class="list section-flex heder-padding-one">
+            <li class="heder-list-item">
+              <a class="heder-link link current" href="./index.html">Студия</a>
+            </li>
+            <li class="heder-list-item">
+              <a class="heder-link link" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="heder-list-item">
+              <a class="heder-link link" href="./index.html">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+
+        <ul class="section-flex list heder-group heder-padding-one">
+          <li class="heder-group-item">
+            <a class="heder-contact link" href="mailito:info@devstudio.com">info@devstudio.com</a>
           </li>
-          <li class="heder-list-item">
-            <a class="heder-link link" href="./portfolio.html">Портфолио</a>
-          </li>
-          <li class="heder-list-item">
-            <a class="heder-link link" href="./index.html">Контакты</a>
+          <li class="heder-group-item">
+            <a class="heder-contact link" href="tel:+380961111111">+38 096 111 11 11</a>
           </li>
         </ul>
-      </nav>
-
-      <ul class="section-flex list heder-group heder-padding-one">
-        <li class="heder-group-item">
-          <a class="heder-contact link" href="mailito:info@devstudio.com">info@devstudio.com</a>
-        </li>
-        <li class="heder-group-item">
-          <a class="heder-contact link" href="tel:+380961111111">+38 096 111 11 11</a>
-        </li>
-      </ul>
+      </div>
     </header>
 
     <!-- main -->
@@ -63,9 +65,11 @@
     <main>
       <!-- section hero -->
 
-      <section class="section hero-background container">
-        <h1 class="section-one-h1">Эффективные решения для вашего бизнеса</h1>
-        <button class="btn-one btn" type="button">Заказать услугу</button>
+      <section class="hero-background">
+        <div class="container">
+          <h1 class="section-one-h1">Эффективные решения для вашего бизнеса</h1>
+          <button class="btn-one btn" type="button">Заказать услугу</button>
+        </div>
       </section>
 
       <!-- section best  -->
@@ -74,28 +78,28 @@
         <div class="container">
           <h2 class="visually-hidden">Особенности и преимущества</h2>
           <ul class="list best-list card-set">
-            <li class="card-set-item">
+            <li class="card-set-best">
               <h3 class="section-one-h3-best">Внимание к деталям</h3>
               <p class="section-one-p-best">
                 Идейные соображения, а также начало повседневной работы по формированию позиции.
               </p>
             </li>
 
-            <li class="card-set-item">
+            <li class="card-set-best">
               <h3 class="section-one-h3-best">Пунктуальность</h3>
               <p class="section-one-p-best">
                 Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
               </p>
             </li>
 
-            <li class="card-set-item">
+            <li class="card-set-best">
               <h3 class="section-one-h3-best">Планирование</h3>
               <p class="section-one-p-best">
                 Равным образом консультация с широким активом в значительной степени обуславливает.
               </p>
             </li>
 
-            <li class="card-set-item">
+            <li class="card-set-best">
               <h3 class="section-one-h3-best">Современные технологии</h3>
               <p class="section-one-p-best">
                 Значимость этих проблем настолько очевидна, что реализация плановых заданий.
@@ -136,66 +140,66 @@
         </div>
       </section>
 
-      <!-- section banda  -->
+      <!-- section team  -->
 
-      <section class="section banda-background section-top">
+      <section class="section team-background">
         <div class="container">
           <h2 class="section-one-h2">Наша команда</h2>
 
-          <ul class="list banda-list card-set">
-            <li class="card-set-item">
-              <div class="banda-border">
-                <img
-                  class="img"
-                  src="./images/hw1-4.jpg"
-                  alt="фото Игорь Демьяненко"
-                  width="270"
-                  height="260"
-                />
-                <h3 class="section-one-h3-banda">Игорь Демьяненко</h3>
-                <p lang="en" class="section-one-p-banda">Product Designer</p>
+          <ul class="list card-set">
+            <li class="team-border">
+              <img
+                class="img"
+                src="./images/hw1-4.jpg"
+                alt="фото Игорь Демьяненко"
+                width="270"
+                height="260"
+              />
+              <div class="team-title">
+                <h3 class="section-one-h3-team">Игорь Демьяненко</h3>
+                <p lang="en" class="section-one-p-team">Product Designer</p>
               </div>
             </li>
 
-            <li class="card-set-item">
-              <div class="banda-border">
-                <img
-                  class="img"
-                  src="./images/hw1-5.jpg"
-                  alt="фото Ольга Репина"
-                  width="270"
-                  height="260"
-                />
-                <h3 class="section-one-h3-banda">Ольга Репина</h3>
-                <p lang="en" class="section-one-p-banda">Frontend Developer</p>
+            <li class="team-border">
+              <img
+                class="img"
+                src="./images/hw1-5.jpg"
+                alt="фото Ольга Репина"
+                width="270"
+                height="260"
+              />
+              <div class="team-title">
+                <h3 class="section-one-h3-team">Ольга Репина</h3>
+                <p lang="en" class="section-one-p-team">Frontend Developer</p>
               </div>
             </li>
 
-            <li class="card-set-item">
-              <div class="banda-border">
-                <img
-                  class="img"
-                  src="./images/hw1-6.jpg"
-                  alt="фото Николай Тарасов"
-                  width="270"
-                  height="260"
-                />
-                <h3 class="section-one-h3-banda">Николай Тарасов</h3>
-                <p lang="en" class="section-one-p-banda">Marketing</p>
+            <li class="team-border">
+              <img
+                class="img"
+                src="./images/hw1-6.jpg"
+                alt="фото Николай Тарасов"
+                width="270"
+                height="260"
+              />
+              <div class="team-title">
+                <h3 class="section-one-h3-team">Николай Тарасов</h3>
+                <p lang="en" class="section-one-p-team">Marketing</p>
               </div>
             </li>
 
-            <li class="card-set-item">
-              <div class="banda-border">
-                <img
-                  class="img"
-                  src="./images/hw1-7.jpg"
-                  alt="фото Михаил Ермаков"
-                  width="270"
-                  height="260"
-                />
-                <h3 class="section-one-h3-banda">Михаил Ермаков</h3>
-                <p lang="en" class="section-one-p-banda">UI Designer</p>
+            <li class="team-border">
+              <img
+                class="img"
+                src="./images/hw1-7.jpg"
+                alt="фото Михаил Ермаков"
+                width="270"
+                height="260"
+              />
+              <div class="team-title">
+                <h3 class="section-one-h3-team">Михаил Ермаков</h3>
+                <p lang="en" class="section-one-p-team">UI Designer</p>
               </div>
             </li>
           </ul>
@@ -205,17 +209,15 @@
 
     <!-- footer -->
 
-    <footer class="footer container">
-      <div class="section-flex footer-container">
-        <a class="logo-web logo-footer section-flex link" href="./index.html"
+    <footer class="footer">
+      <div class="container footer-position section-flex footer-container">
+        <a class="logo-web link" href="./index.html"
           >Web<span class="footer-logo-studio">Studio</span></a
         >
-      </div>
 
-      <address class="footer-address-it">
-        <div class="section-flex footer-container">
-          <ul class="list section-flex footer-container">
-            <li class="section-flex">
+        <address class="footer-address-it">
+          <ul class="list">
+            <li class="footer-contact-position">
               <a
                 class="footer-address link"
                 href="https://goo.gl/maps/yNYyYPv2zE2rzLxP9"
@@ -224,15 +226,15 @@
                 >г. Киев, пр-т Леси Украинки, 26</a
               >
             </li>
-            <li class="section-flex">
+            <li class="footer-contact-position">
               <a class="footer-contact link" href="mailito:info@example.com">info@example.com</a>
             </li>
-            <li class="section-flex footer-end">
+            <li class="footer-contact-position">
               <a class="footer-contact link" href="tel:+380991111111">+38 099 111 11 11</a>
             </li>
           </ul>
-        </div>
-      </address>
+        </address>
+      </div>
     </footer>
   </body>
 </html>

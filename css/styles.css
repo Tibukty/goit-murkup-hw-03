@@ -63,8 +63,8 @@ img {
 
 
 .section {
-    padding-top: 95px;
-    padding-bottom: 95px;
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 .container {
@@ -120,19 +120,13 @@ img {
     border: 0px;
 }
  
-
-/* сетка flex */
-
 .card-set {
     display: flex;
     flex-wrap: wrap;
-    margin: calc(-1 * var(--indent) / 2);
+    gap: 30px;
 }
 
-.card-set-item {
-    flex-basis: calc((100% - (var(--indent)) * var(--items)) / var(--items));
-    margin: calc((var(--indent)) / 2);
-}
+
 
 
 /* comon styles end */
@@ -222,10 +216,13 @@ img {
 
 /* main-one */
 
+/* section hero */
+
 .hero-background {
 
     background-color: var(--heder-footer);
     text-align: center;
+    padding: 200px 0;
  }
  
 .section-one-h1 { 
@@ -233,13 +230,13 @@ img {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    width: 695px;
+    width: 696px;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--txt-white);
     margin-right: auto;
     margin-left: auto;
-    margin-top: 90px;
+    
        
 }
 
@@ -250,11 +247,11 @@ img {
     letter-spacing: 0.06em; 
     color: var(--txt-white);
     background-color:var(--accent-txt-color);
-    padding: 10px 30px;
+    padding: 10px 32px;
     margin-top: 30px;
     margin-right: auto;
     margin-left: auto;
-    margin-bottom: 90px;
+    
 
 }
 
@@ -262,9 +259,11 @@ img {
 .btn-one:hover,
 .btn-one:focus,
 .btn-one:active {
-    color: var(--txt-deep-grey);
-    background-color: var(--txt-light-gray);
+    color: var(--txt-white);
+    background-color: #188CE8;
 }
+
+/* section best */
 
 .section-one-h2 {
     
@@ -281,69 +280,63 @@ img {
     
     font-size: 14px;
     line-height: 1.14;
-    
     text-transform: uppercase;
     color: var(--txt-deep-grey);
-    margin-bottom: 7px;}
+    margin-bottom: 10px;
+}
     
 .section-one-p-best {
     font-size: 14px;
     line-height: 1.71;
     
 }
-.best-list {
-   
-    --items: 4;
+.card-set-best {
+    width: 270px;
 }
 
-.banda-background {
+
+/* section team */
+
+.team-background {
     background-color: #F5F4FA;;
 }
 
-.section-top {
-    padding-top: 0;}
 
-.banda-border {
-    padding: 0px 0px;
-    border: 1px solid #EEEEEE;
-    background-color: #FFFFFF;;
-    border-top: none;
+.team-border {
+    background: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 
 }
 
-.section-one-h3-banda {
-    
-    font-weight: 500;
-    line-height: 1.19;
-    /* identical to box height */
+.team-title {
+    margin: 30px 0;
     text-align: center;
+
+}
+
+.section-one-h3-team {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
     color: var(--txt-deep-grey);
-    margin-top: 30px;
     margin-bottom: 10px;
     }
 
-.section-one-p-banda {
-    
+.section-one-p-team {
     line-height: 1.19;
-    /* identical to box height */
-    text-align: center;
-    margin-bottom: 30px;
-    } 
-
-.banda-list {
-    --items: 4;
-}
+    
+} 
 
 
 
 
-/* main-portfolio */  
+
+/* section-portfolio */  
 
 
 
 .list-portfolio-container {
-        align-items: center;
         justify-content: center;
         
       }
@@ -356,9 +349,11 @@ img {
         color: var(--txt-deep-grey);
         background-color: transparent;
         background-color: var(--txt-light-gray);
-        margin-left: 10px;
-    }
+}
 
+.btn-right:not(:last-child) {
+    margin-right: 8px;
+}
 
 .btn-portfolio:hover,
 .btn-portfolio:focus,
@@ -375,14 +370,16 @@ img {
 
 
 .card-top {
-    margin-top: 34px;
+    margin-top: 50px;
 }
  
 
 
-.portfolio-border {
+.card-set-item {
+    width: 370px;
+    background-color: #FFFFFF;
     border: 1px solid #EEEEEE;
-    border-top: none;
+    
        
     }
 .text-padding {
@@ -413,7 +410,11 @@ padding: 20px 24px;
 
 .footer {
 background-color: var(--heder-footer);
+}
 
+.footer-position {
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .footer-container {
@@ -421,9 +422,7 @@ background-color: var(--heder-footer);
     
 }
 
-.logo-footer {
-    margin-top: 60px;
-    }
+
 
 .footer-logo-studio {
 color: var(--txt-white);
@@ -431,14 +430,20 @@ color: var(--txt-white);
 
 .footer-address-it {
     font-style: normal;
+    margin-top: 20px;
     } 
+
+.footer-contact-position:not(:last-child) {
+    margin-bottom: 9px;
+}
+
 
 .footer-address {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--txt-white);
-    margin-top: 20px;
+    
     
 }
 
@@ -448,15 +453,12 @@ color: var(--txt-white);
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--txt-gray-glass);
-    margin-top: 10px;
+    
     not(last-child): 10px;
     
 }
 
-.footer-end { 
-    margin-bottom: 60px;
 
-}
 
 .footer-contact:hover,
 .footer-contact:focus {
